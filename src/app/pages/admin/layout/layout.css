@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #555;
+}
+
+.navbar .search-form {
+  display: flex;
+  gap: 10px;
+  border: white 1px solid;
+}
+
+.navbar input[type='text'] {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: 200px;
+  color: #f5f5f5;
+}
+
+.navbar button {
+  padding: 8px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #45a049;
+}
+
+.content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.6;
+}
+

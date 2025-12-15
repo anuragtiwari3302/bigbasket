@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="parent">
+  <div class="ring">
+    <i style="--clr: #00ff0a"></i>
+    <i style="--clr: #ff0057"></i>
+    <i style="--clr: #fffd44"></i>
+    <div class="login">
+      <h2>Login</h2>
+      <div class="inputBx">
+        <input type="text" name="userName" [(ngModel)]="loginObj.userName" placeholder="Enter Username" required />
+      </div>
+
+      <div class="inputBx">
+        <input type="password" name="password" [(ngModel)]="loginObj.password" placeholder="Enter Password" required />
+      </div>
+      <div class="inputBx">
+        <input type="submit" value="Sign in" (click)="onLogin()"/>
+      </div>
+      <div class="links">
+        <a href="google.com.es">Forget Password</a>
+        <a href="#">Signup</a>
+      </div>
+    </div>
+  </div>
+</div>

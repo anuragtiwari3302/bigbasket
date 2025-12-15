@@ -1,1 +1,37 @@
-<p>layout works!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Forms</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Logo</a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+
+        <form class="search-form" onsubmit="handleSearch(event)">
+          <input type="text" placeholder="Search..." id="searchInput" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <script>
+      function handleSearch(e) {
+        e.preventDefault();
+        const searchTerm = document.getElementById('searchInput').value;
+        if (searchTerm) {
+          alert('Searching for: ' + searchTerm);
+          // In a real application, you would handle the search here
+        }
+      }
+    </script>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </body>
+</html>

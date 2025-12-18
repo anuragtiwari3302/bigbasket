@@ -89,7 +89,10 @@
                 
                 <div class="col-6">
                     <label for="">Category</label>
-                    <input type="text" [(ngModel)]="productObj.categoryId" class="form-control"/>
+                    <select [(ngModel)]="productObj.categoryId" class="form-select">
+                      <option *ngFor="let cate of categoryList" [value]="cate.categoryId">{{cate.categoryName}}</option>
+                    </select>
+                    <input type="text"/>
                 </div>
                 <div class="col-6">
                     <label for="">Delivery time span</label>
